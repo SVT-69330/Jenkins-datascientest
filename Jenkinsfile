@@ -28,12 +28,12 @@ pipeline {
             }
           }
         }
-          stage('User Acceptance') {
-            steps {
-                input(message: 'Proceed to push to main', ok: 'Yes')
-                // autres étapes ici
-            }
-        }
+        //   stage('User Acceptance') {
+        //     steps {
+        //         input(message: 'Proceed to push to main', ok: 'Yes')
+        //         // autres étapes ici
+        //     }
+        // }
           stage('Pushing and Merging'){
             parallel {
                 stage('Pushing Image') {
